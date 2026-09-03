@@ -1,0 +1,48 @@
+{
+  "name": "@profullstack/kali",
+  "version": "0.1.0",
+  "description": "Unofficial one-command installer for popular Kali-style security tools (web app pentesting toolkit) on Debian/Ubuntu.",
+  "type": "module",
+  "bin": {
+    "kali": "bin/kali.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "kali",
+    "security",
+    "pentest",
+    "pentesting",
+    "web-security",
+    "appsec",
+    "installer",
+    "nmap",
+    "nuclei",
+    "ffuf",
+    "sqlmap",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "profullstack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profullstack/kali.git"
+  },
+  "homepage": "https://github.com/profullstack/kali#readme",
+  "bugs": {
+    "url": "https://github.com/profullstack/kali/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
