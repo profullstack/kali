@@ -11,14 +11,17 @@ application testing on a plain **Debian/Ubuntu** box — no need to run Kali its
 ## Install
 
 ```sh
-npx @profullstack/kali install        # install everything
+curl -fsSL https://raw.githubusercontent.com/profullstack/kali/main/install.sh | sh
+kali install                          # install everything
 ```
 
-or install the CLI globally:
+The installer itself needs no root: it puts the `kali` command under `~/.local` (fetching a private Node if yours is too old). `kali install` then uses `sudo` for the pentest tools it installs. Run the installer again to update; remove the CLI with `sh ~/.local/share/kali/uninstall.sh`.
+
+Or with npm:
 
 ```sh
-npm i -g @profullstack/kali
-kali install
+npx @profullstack/kali install        # install everything
+npm i -g @profullstack/kali           # or the CLI globally
 ```
 
 ## Usage
